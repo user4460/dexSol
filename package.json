@@ -8,7 +8,8 @@
     "compile": "hardhat compile",
     "test": "hardhat test",
     "console": "hardhat console",
-    "migration": "hardhat run scripts/migration.js"
+    "migration": "hardhat run scripts/migration.js",
+    "run": "hardhat run scripts/deploy.js"
   },
   "bundleDependencies": [
     "ethers",
