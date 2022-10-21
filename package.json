@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "chai": "^4.3.6",
+    "ethers": "^5.7.2",
     "hardhat": "^2.12.0"
   },
   "scripts": {
@@ -9,6 +11,7 @@
     "migration": "hardhat run scripts/migration.js"
   },
   "bundleDependencies": [
+    "ethers",
     "hardhat"
   ]
 }
