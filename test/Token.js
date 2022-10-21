@@ -6,9 +6,11 @@ describe("Token contract", function () {
 
       const Token = await ethers.getContractFactory("Token");
 
+      //deployとは、コントラクトをデプロイするためのメソッド
       const hardhatToken = await Token.deploy();
 
       const ownerBalance = await hardhatToken.balanceOf(owner.address);
+      //totalSupplyとは、トークンの総発行量を取得するためのメソッド
       expect(await hardhatToken.totalSupply()).to.equal(ownerBalance);
    });
 });
