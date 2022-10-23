@@ -8,8 +8,10 @@
     "compile": "hardhat compile",
     "test": "hardhat test",
     "console": "hardhat console",
-    "migration": "hardhat run scripts/migration.js",
-    "run": "hardhat run scripts/deploy.js"
+    "deploy": "hardhat run scripts/deploy.js",
+    "node": "npx hardhat node",
+    "report": "REPORT_GAS=true npx hardhat test",
+    "help": "npx hardhat help"
   },
   "bundleDependencies": [
     "ethers",
